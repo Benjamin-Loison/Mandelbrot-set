@@ -1,0 +1,38 @@
+0=>ClrGraph
+0=>Cls
+AxesOff
+100->I
+0=>1.6 TESTED
+If 0
+Then ViewWindow -1.65,1.65,1,-0.9,0.9,1
+IfEnd
+
+If 0
+Then 
+
+While 1
+
+4Ran#-2+(4Ran#-2)i->A
+0->N
+A->Z
+
+While Abs Z<=2 And N<I
+Isz N
+Z²-1->Z
+WhileEnd
+
+If N=I
+Then 
+PlotOn ReP A,ImP A
+PlotOn ReP -A,ImP A
+PlotOn ReP A,ImP -A
+PlotOn ReP -A,ImP -A
+IfEnd
+
+WhileEnd
+
+Else 
+
+RclCapt1
+
+IfEnd
