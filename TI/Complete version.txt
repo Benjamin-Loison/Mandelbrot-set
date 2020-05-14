@@ -1,0 +1,47 @@
+ClrDraw
+Input "ZOOM (0,1): ",Q
+Input "MAX ITERATIO: ",N
+63->Z
+If Q
+Then
+	~2.6->Xmin
+	1->Xmax
+	.5->Xscl
+	~1.2->Ymin
+	1.2->Ymax
+	.5->Yscl
+	31->Z
+	DispGraph
+	(Xmax-Xmin)/95->C
+	(Ymax-Ymin)/63->D
+	0->J
+	Lbl J
+	Ymin+JD->B
+	0->I
+	Lbl I
+	Xmin+IC->A
+	A->X
+	B->Y
+	1->K
+	Lbl 1
+	XX->U
+	YY->V
+	2XY+B->Y
+	U-V+A->X
+	K+1->K
+	If U+V>100
+	Then
+		Goto 2
+		If K<N
+		Then
+			Goto 1
+			Pt-On(A,B
+			If Z=31
+			Then
+				Pt-On(A,~B
+				Lbl 2
+				IS>(I,95
+				Goto I
+				IS>(J,Z
+				Goto J
+			End
