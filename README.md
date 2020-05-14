@@ -1,3 +1,3 @@
 # Mandelbrot set
 
-![alt text](https://raw.githubusercontent.com/Benjamin-Loison/BASIC-algorithms-calculators-/master/MANDELBR/result.jpg)
+![alt text](https://raw.githubusercontent.com/Benjamin-Loison/Mandelbrot-set/master/result.jpg)
