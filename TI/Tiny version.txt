@@ -1,0 +1,31 @@
+264->W
+164->H
+
+W/2->A
+H/2->B
+
+1.5/W->U
+1.5/H->V
+
+10->M
+~3/4->C
+
+DelVar L1
+
+For(D,1,W
+	
+	For(E,1,H
+		
+		U(A-D)->X
+		V(B-E)->Y
+		
+		For(theta,1,M
+			
+			real(Z->X
+			imag(Z->Y
+			
+			Z^^2+C->Z
+			
+		End
+		
+	End
